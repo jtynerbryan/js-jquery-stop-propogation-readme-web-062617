@@ -5,8 +5,10 @@ $(document).ready(function(){
     $(this).find('.detail').slideToggle();
   });
 
-  $('.course .delete').on('click', function(){
+  $('.course .delete').on('click', function(e){
     alert("about to delete");
+    e.stopPropagation();
+
   });
 
   //stop propagation
